@@ -16,9 +16,9 @@ const About =() => {
             <div className="about_data">
             <Info/>
               <p className="about_description">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo maiores culpa ut molestiae sunt distinctio!
+              I usually do my projects in the Frontend area. I try to ensure that they are as high-performance as I can and comply with UI and UX design principles.
               </p>
-              <a href={CV} className='button button--flex'> <i class='bx bxs-download'></i>Download Cv </a>
+              <a href={CV} className='button button--flex'> <i className='bx bxs-download'></i>Download Cv </a>
             </div>
        </div>  
       

@@ -1,5 +1,5 @@
 .services{
-    margin-top: 15rem;
+    margin-top: 25rem;
     margin-bottom: 15rem;
     height: 500px;
     
@@ -25,13 +25,14 @@
 }
 .services_content {
     position: relative;
-    border:  1px solid black;
+    border: 1px solid rgba(0, 0, 0, 0.1);
     background-color: var(--container-color);
     border-radius: 5%;
     padding: 6rem 0 2rem 2.5rem;
 }
 .services_modal{
     display: none;
+   
 }
 .services_icon {
     display: block;
@@ -63,7 +64,7 @@
     right: 0;
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.5);
-    z-index: var(--z-modal);
+    z-index: 1000;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -128,9 +129,10 @@
 
   
   @media screen and (max-width: 992px){
+    .services{margin-top: 25rem;}
     .services_container{
         grid-template-columns: repeat(3,218px);
-  
+        
     }
 
     }
@@ -145,7 +147,10 @@
         }
         .services_icon {
             font-size: 1.5rem;
-        }
+        }.services{
+            margin-top: 45rem;
+        
+          }
     
         
     }
@@ -156,6 +161,10 @@
         }
         .services_modal_description{
             padding: 0;
+       
+         }
+         .services{
+           margin-top: 45rem;
        
          }
         

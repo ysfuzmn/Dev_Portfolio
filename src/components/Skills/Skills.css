@@ -1,11 +1,14 @@
 .skills_section{
+    
     margin-top: 15rem ;
     text-align: center;
     height: 500px;
+    
+    
 }
 .skills_container{
     grid-template-columns: repeat(2 , 350px);
-    column-gap: 3rem;
+    column-gap: 5rem;
     justify-content: center;
 }
 .skills_content{
@@ -13,7 +16,7 @@
     background-color: var(--container-color);
     padding: 2rem 4rem;
     border-radius: 1.25rem;
-    border: 1px solid black;
+   border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .skills_title{
@@ -30,7 +33,7 @@
 
 .skills_data{
     display: flex;
-    column-gap: 1rem;
+    margin-top: 15px;
 }
 .skills .bx-badge-check{
     font-size: 1rem;
@@ -38,10 +41,15 @@
 }
 .skills_name{
     font-size: smaller;
-    line-height: 20px;
+    line-height: 25px;
 }
 .skills_level{
     font-size: xx-small;
+    margin: 2rem;
+    
+    
+    
+    
 }
 
 
@@ -53,15 +61,24 @@
   }
   
   @media screen and (max-width: 576px){
+    .skills_section{
+        
+    }
     .skills_container{
         grid-template-columns: 1fr;
+        
 
     }
-    .skil_content{
+    .skill_content{
         padding: 1.5rem;
     }
   }
   @media screen and (max-width: 350px){
+    .skills_container{
+       
+        margin-top: 5rem;
+
+    }
       .skills_box{
         column-gap: 1.25rem;
       }

@@ -1,0 +1,48 @@
+.scrolldown {
+    position: fixed;
+    left: 2.5rem;
+    bottom: -20%;
+    background-color: black;
+    opacity: 0.8;
+    padding: 0.4rem 0.5rem;
+    border-radius: 0.5rem;
+    z-index: 1000; 
+    cursor: pointer;
+    transition: .4s;
+}
+
+.scrolldown_icon {
+    font-size: 1.5rem;
+    color: white;
+}
+
+.scrolldown:hover {
+    background-color: #747bff; 
+}
+
+.show-scrolldown {
+    bottom: 3rem;
+}
+
+@media screen and (max-width: 992px) {
+    .scrolldown {
+        left: 1.5rem;
+        padding: 0.25rem 0.4rem;
+    }
+
+    .scrolldown_icon {
+        font-size: 1.25rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .show-scrolldown {
+        bottom: 6rem;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .scrolldown {
+        right: 1rem;
+    }
+}

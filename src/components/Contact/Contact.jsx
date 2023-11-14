@@ -1,19 +1,27 @@
-import emailjs from '@emailjs/browser';
 import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 import "./Contact.css";
+
+
+
 const Contact = () => {
     const form = useRef();
-
+  
     const sendEmail = (e) => {
-        e.preventDefault();
-
-        emailjs.sendForm('service_4xr3jp7', 'template_biy7eyl', form.current, '50VI8fJNgDrRfnROG')
+      e.preventDefault();
+  
+      emailjs.sendForm('service_jdtkgyc', 'template_biy7eyl', form.current, 'nyEZvyLVm9crp1rE8')
         .then((result) => {
-            console.log(result.text);
-        }, (error) => {
-            console.log(error.text);
+          console.log(result.text);
+          alert('Your email has been sent successfully!');
+        })
+        .catch((error) => {
+          console.log(error.text);
+          alert('Error sending email. Please try again later.');
         });
-  };
+    };
+
+
   return (
     <section className="contact section" id="contact">
         <h2 className="section_title">Get in touch</h2>
@@ -27,12 +35,12 @@ const Contact = () => {
 
 
                 <div className="contact_card">
-                    <i class='bx bx-mail-send contact_card_icon'></i>
+                    <i className='bx bx-mail-send contact_card_icon'></i>
                     <h3 className="contact_card_title">Email</h3>
-                    <span className="contact_card_data">lorem@gmail.com</span>
+                    <span className="contact_card_data">ysfuzmn2077@gmail.com</span>
                     
-                   <a href="mailto:lorem@gmail.com" className="contact_button">
-                    Write me <i class='bx bx-right-arrow-alt contact_button_icon' ></i>
+                   <a href="mailto:ysfuzmn2077@gmail.com" className="contact_button">
+                    Write me <i className='bx bx-right-arrow-alt contact_button_icon' ></i>
                     </a>
 
                 </div>
@@ -41,9 +49,9 @@ const Contact = () => {
                 <div className="contact_card">
                     <i class='bx bxl-whatsapp contact_card_icon'></i>
                     <h3 className="contact_card_title">Whatsapp</h3>
-                    <span className="contact_card_data">123-243-12-12</span>
+                    <span className="contact_card_data">506 114 49 98</span>
                     
-                   <a href="www.whatsapp.com" className="contact_button">
+                    <a href="https://www.whatsapp.com" className="contact_button">
                     Write me <i class='bx bx-right-arrow-alt contact_button_icon' ></i>
                     </a>
 
@@ -51,18 +59,19 @@ const Contact = () => {
 
 
                 <div className="contact_card">
-                    <i class='bx bxl-messenger contact_card_icon'></i>
+                    <i className='bx bxl-messenger contact_card_icon'></i>
                     <h3 className="contact_card_title ">Messenger</h3>
-                    <span className="contact_card_data">lorem</span>
+                    <span className="contact_card_data">Uzmn</span>
                     
-                   <a href="www.messenger." className="contact_button">
-                    Write me <i class='bx bx-right-arrow-alt contact_button_icon' ></i>
+                    <a href="https://www.messenger.com" className="contact_button">
+                    Write me <i className='bx bx-right-arrow-alt contact_button_icon' ></i>
                     </a>
 
                 </div>
 
             </div>
             </div>
+            
             <div className="contact_content">
                 <h3 className="contact_title">Send Me Message</h3>
 
@@ -70,7 +79,7 @@ const Contact = () => {
                 className="contact_form">
                     <div className="contact_form_div">
                         <label htmlFor="" className="contact_form_tag"></label>
-                        <input type="text"  name='name' className='contact_form_input' placeholder='Insert your Name'/>
+                        <input type="text"  name='name' className='contact_form_input' required placeholder='Insert your Name'/>
 
                         
                     </div>
@@ -78,20 +87,20 @@ const Contact = () => {
 
                     <div className="contact_form_div">
                         <label htmlFor="" className="contact_form_tag"></label>
-                        <input type="email"  name='email' className='contact_form_input' placeholder='Insert your Email'/>
+                        <input type="email"  name='email' className='contact_form_input' required placeholder='Insert your Email'/>
                         
                         
                     </div>
 
                     <div className="contact_form_div">
                         <label htmlFor="" className="contact_form_tag"></label>
-                        <textarea name="message"  cols="25" rows="3" className='contact_form_input' placeholder='Write your message'/>
+                        <textarea name="message"  cols="25" rows="3" className='contact_form_input'required placeholder='Write your message'/>
                         
                         
                     </div>
 
 
-                    <button><a href="" type='submit' className='button'>Send <i class='bx bx-send send_button'></i></a></button>
+                    <button><a  type='submit' className='button'>Send <i className='bx bx-send send_button'></i></a></button>
 
 
                 </form>

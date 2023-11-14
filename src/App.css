@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Varela+Round&display=swap');
-
+@import 'slick-carousel/slick/slick.css';
+@import 'slick-carousel/slick/slick-theme.css';
 
 
 :root {
@@ -16,10 +17,8 @@
 
 
   /* COLOR */
-    color-scheme: light dark;
-    color: rgba(255, 255, 255, 0.87);
-    background-color: #242424;
-    --container-color: #fff;
+    
+    --container-color: #F3F3F3;
     --hue: 0;
     --sat: 0%;
     --title-color: hs1(var(--hue), var(--sat), 20%);
@@ -27,7 +26,7 @@
     --text-color: hs1(var(--hue), var (--sat), 46%) ;
     --body-color: hs1(var(--hue), var (--sat), 98%);
  
-
+        
 
   --big-font-size : 3.5rem;
   --normal-font-size : 1rem;
@@ -53,6 +52,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  user-select: none;
+  
 
 
 }
@@ -61,6 +62,14 @@ html {
   scroll-behavior: smooth;
 }
 
+body{
+  
+  margin: 0 auto;
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat;
+  
+}
 
 
 
@@ -78,7 +87,7 @@ a{
 }
 
 button {
-
+  
   border: none;
   outline: none;
   cursor: pointer;
@@ -95,11 +104,13 @@ section {
 }
 
 
+
 /* LAYOUTS */
 .container {
   max-width: 968px;
   margin-left: auto;
   margin-right: auto;
+  
   
 
 }
@@ -109,15 +120,23 @@ section {
 }
 
 .button {
-  display: inline-block;
+ 
   padding: 1.25rem 2rem;
-  border-radius: 1rem;
+  border-radius: 4rem;
   font-weight: var(--font-medium);
 }
 
 .button_icon {
   margin-left: 0.5rem;
 }
+
+a:hover {
+  color: #747bff;
+}
+
+
+
+
 
 
 @media (prefers-color-scheme: light) {
@@ -127,6 +146,7 @@ section {
   }
   a:hover {
     color: #747bff;
+    
   }
   button {
     background-color: #f9f9f9;

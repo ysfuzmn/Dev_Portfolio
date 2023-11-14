@@ -34,6 +34,7 @@
 }
 
 .work_img{
+    max-height: 10rem;
     width: 200px;
     border-radius: 1rem;
     margin-bottom: 1rem;
@@ -72,7 +73,7 @@
 
 .active-work {
     background-color: var(--title-color);
-    color: var(--container-color);
+    color: #747bff;
 }
 
 

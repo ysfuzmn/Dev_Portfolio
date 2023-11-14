@@ -4,15 +4,15 @@ const Social = () => {
   return (
     <div className="home-social">
 
-        <a href="https://www.instagram.com/" className="home-social-icon" target= '_blank'>
+        <a href="https://www.instagram.com/" className="home-social-icon"rel='noreferrer' target= '_blank'>
         <i class='bx bxl-instagram'></i>
         </a>
 
-        <a href="https://www.github.com/" className="home-social-icon" target= '_blank'>
+        <a href="https://github.com/ysfuzmn" className="home-social-icon" rel='noreferrer' target= '_blank'>
         <i class='bx bxl-github' ></i>
         </a>
 
-        <a href="https://dribbble.com/" className="home-social-icon" target= '_blank'>
+        <a href="https://dribbble.com/NoTask" className="home-social-icon" rel='noreferrer' target= '_blank'>
         <i class='bx bxl-dribbble' ></i>
         </a>
 
