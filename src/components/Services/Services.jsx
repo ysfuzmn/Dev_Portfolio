@@ -33,7 +33,7 @@ const Services = () => {
       modalServices: ["I work to get better results by using search engine optimization on my websites.",],
       icon: "bx-search",
     },
-    // You can add more service objects if needed
+  
   ];
 
   return (

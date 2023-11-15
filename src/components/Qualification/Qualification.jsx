@@ -23,7 +23,7 @@ const Qualification = () => {
                 onClick={() => toggleTab(1)  }
                 >
 
-                    <i class='bx bxs-graduation qualification_icon'></i>Education
+                    <i className='bx bxs-graduation qualification_icon'></i>Education
                 </div>
 
                 <div className=
@@ -34,7 +34,7 @@ const Qualification = () => {
                    onClick={() => toggleTab(2)  }
 
                    >
-                    <i class='bx bxs-briefcase'></i>Experience
+                    <i className='bx bxs-briefcase'></i>Experience
                 </div>        
             </div>
 
@@ -53,7 +53,7 @@ const Qualification = () => {
                         <span className="qualification_subtitle">Turkey-Instute</span>
                     
                     <div className="qualification_calendar">
-                        <i class='bx bx-calendar' >2023-Present</i>
+                        <i className='bx bx-calendar' >2023-Present</i>
                     </div>
 
                     </div> 
@@ -78,7 +78,7 @@ const Qualification = () => {
                         <span className="qualification_subtitle">Turkey-Instute</span>
                     
                     <div className="qualification_calendar">
-                        <i class='bx bx-calendar' >2021-2022</i>
+                        <i className='bx bx-calendar' >2021-2022</i>
                     </div>
 
                     </div> 
@@ -109,7 +109,7 @@ const Qualification = () => {
                         <span className="qualification_subtitle">None</span>
                     
                     <div className="qualification_calendar">
-                        <i class='bx bx-calendar' >None</i>
+                        <i className='bx bx-calendar' >None</i>
                     </div>
 
                     </div> 

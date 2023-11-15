@@ -5,8 +5,8 @@
     
     window.addEventListener("scroll", function() {
       const header = document.querySelector(".header");
-      if (this.scrollY >= 80) header.classList.add 
-      ("scroll-header");
+      if (this.scrollY >= 80) header.classList.add("scroll-header"); 
+      
       else header.classList.remove("scroll-header");
     });
     /* Toggle menu */
@@ -61,8 +61,8 @@
               
               <li className="nav_item">
                 <a href="#home" 
-                onClick={() => setActiveNav 
-                ('#home')} className={activeNav === "#home" ? 
+                onClick={() => setActiveNav('#home')} 
+                 className={activeNav === "#home" ? 
                 "nav_link active-link" :"nav_link active-link"}>
 
                 <i className='bx bx-home-alt nav_icon'></i>Home
@@ -70,48 +70,48 @@
               </li>
               <li className="nav_item">
                 <a href="#about" 
-                  onClick={() => setActiveNav 
-                  ('#about')} className={activeNav === "#about" ? 
+                  onClick={() => setActiveNav('#about')} 
+                   className={activeNav === "#about" ? 
                   "nav_link active-link" :"nav_link active-link"}>
                 <i className='bx bx-user nav_icon' ></i>About
                 </a>
               </li>
               <li className="nav_item">
                 <a href="#skills"
-                  onClick={() => setActiveNav 
-                  ('#skills')} className={activeNav === "#skills" ? 
+                  onClick={() => setActiveNav('#skills')}
+                   className={activeNav === "#skills" ? 
                   "nav_link active-link" :"nav_link active-link"}>
                 <i className='bx bx-folder nav_icon'></i>Skills
                 </a>
               </li>
               <li className="nav_item">
                 <a href="#services"
-                  onClick={() => setActiveNav 
-                    ('#services')} className={activeNav === "#services" ? 
+                  onClick={() => setActiveNav('#services')} 
+                     className={activeNav === "#services" ? 
                     "nav_link active-link" :"nav_link active-link"}>
                 <i className='bx bx-briefcase nav_icon'></i>Services
                 </a>
               </li>
               <li className="nav_item">
                 <a href="#portfolio" 
-                onClick={() => setActiveNav 
-                  ('#portfolio')}
+                onClick={() => setActiveNav('#portfolio')} 
+                  
                 className='nav_link'>
                 <i className='bx bx-spreadsheet nav_icon'></i>Portfolio
                 </a>
               </li>
               <li className="nav_item">
                 <a href="#certificates"
-                onClick={() => setActiveNav 
-                  ('#certificates')}
+                onClick={() => setActiveNav ('#certificates')} 
+                 
                 className='nav_link'>
                 <i className='bx bx-message-rounded-detail nav_icon'></i>Certificates
                 </a>
               </li>
               <li className="nav_item">
                 <a href="#contact"
-                onClick={() => setActiveNav 
-                  ('#contact')}
+                onClick={() => setActiveNav('#contact')} 
+                  
                 className='nav_link'>
                 <i className='bx bx-message-rounded-detail nav_icon'></i>Contact
                 </a>

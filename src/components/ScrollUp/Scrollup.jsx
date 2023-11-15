@@ -10,7 +10,7 @@ const Scrollup = () => {
     
   return (
     <a href="#" className="scrollup">
-        <i class='bx bx-up-arrow-alt scrollup_icon'></i>
+        <i className='bx bx-up-arrow-alt scrollup_icon'></i>
     </a>
   )
 }

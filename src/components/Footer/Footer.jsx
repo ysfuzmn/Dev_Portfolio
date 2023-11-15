@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import './Footer.css';
-import PropTypes from 'prop-types';
+
 
 const Footer = () => {
   return (
@@ -27,13 +27,13 @@ const Footer = () => {
         </ul>
 
         <div className="footer_social">
-          <a href="https://www.instagram.com/" className="footer_social_link" target="_blank">
+          <a href="https://www.instagram.com/" rel='noreferrer' className="footer_social_link" target="_blank">
             <i className="bx bxl-instagram"></i>
           </a>
-          <a href="https://github.com/ysfuzmn" className="footer_social_link" target="_blank">
+          <a href="https://github.com/ysfuzmn" rel='noreferrer' className="footer_social_link" target="_blank">
             <i className="bx bxl-github"></i>
           </a>
-          <a href="https://dribbble.com/" className="footer_social_link" target="_blank">
+          <a href="https://dribbble.com/" rel='noreferrer' className="footer_social_link" target="_blank">
             <i className="bx bxl-dribbble"></i>
           </a>
         </div>
