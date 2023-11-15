@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-unused-vars
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import "./Contact.css";
@@ -78,26 +79,17 @@ const Contact = () => {
                 <form  ref={form} onSubmit={sendEmail}
                 className="contact_form">
                     <div className="contact_form_div">
-                        <label htmlFor="" className="contact_form_tag"></label>
-                        <input type="text"  name='name' className='contact_form_input' required placeholder='Insert your Name'/>
+                   
+                    <input type="text" name='name' id="name" className='contact_form_input' required placeholder='Insert your Name'/>
+                </div>
 
-                        
-                    </div>
+                <div className="contact_form_div">
+                    <input type="email" name='email' id="email" className='contact_form_input' required placeholder='Insert your Email'/>
+                </div>
 
-
-                    <div className="contact_form_div">
-                        <label htmlFor="" className="contact_form_tag"></label>
-                        <input type="email"  name='email' className='contact_form_input' required placeholder='Insert your Email'/>
-                        
-                        
-                    </div>
-
-                    <div className="contact_form_div">
-                        <label htmlFor="" className="contact_form_tag"></label>
-                        <textarea name="message"  cols="25" rows="3" className='contact_form_input'required placeholder='Write your message'/>
-                        
-                        
-                    </div>
+                <div className="contact_form_div">
+                    <textarea name="message" id="message" cols="25" rows="3" className='contact_form_input' required placeholder='Write your message'/>
+                </div>
 
 
                     <button><a  type='submit' className='button'>Send <i className='bx bx-send send_button'></i></a></button>
